@@ -19,7 +19,7 @@ Hey there, it's SS-YYC. I mainly develop in Python but occasionally also program
 ⌖ **Location** &nbsp; Canada <br/>
 ⟳ **Learning** &nbsp; JS
 
-✦ **Fun fact** &nbsp; I like badminton
+✦ **Fun fact** &nbsp; I like badminton.
 
 ---
 
