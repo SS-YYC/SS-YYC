@@ -77,7 +77,7 @@ Hey there, it's SS-YYC. I mainly develop in Python but occasionally also program
 
 <div align="center">
 
-<sub>Made with <a href="https://lebedevnet.github.io/ReadmeForge">ReadmeForge</a> &nbsp;·&nbsp; <a href="https://github.com/SS-YYC">github.com/SS-YYC</a></sub>
+<a href="https://github.com/SS-YYC">github.com/SS-YYC</a></sub>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=ffffff&height=120&section=footer" width="100%"/>
 
