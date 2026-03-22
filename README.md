@@ -51,14 +51,6 @@ Hey there, it's SS-YYC. I mainly develop in Python but occasionally also program
 
 </div>
 
-### Trophies
-
-<div align="center">
-
-<a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=SS-YYC&theme=nord&column=6&no-frame=true&margin-w=8" alt="trophies"/></a>
-
-</div>
-
 ---
 
 ### Activity
