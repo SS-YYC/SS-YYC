@@ -17,7 +17,7 @@
 Hey there, it's SS-YYC. I mainly develop in Python but occasionally also program in HTML and CSS.
 
 ⌖ **Location** &nbsp; Canada <br/>
-⟳ **Learning** &nbsp; JS
+⟳ **Learning** &nbsp; JavaScript, C#
 
 ✦ **Fun fact** &nbsp; I like badminton.
 
