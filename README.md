@@ -1,76 +1,54 @@
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=ffffff&height=240&section=header&text=SS-YYC&fontSize=68&fontColor=ffffff&fontAlignY=38&fontStyle=bold&desc=Python%20Developer&descSize=20&descAlignY=58&descColor=ffffffaa&animation=fadeIn&stroke=ffffff&strokeWidth=2" width="100%"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=ffffff&height=240&section=header&text=SS-YYC&fontSize=68&fontColor=ffffff&fontAlignY=38&fontStyle=bold&desc=Developer&descSize=20&descAlignY=58&descColor=ffffffaa&animation=fadeIn&stroke=ffffff&strokeWidth=2" width="100%" alt="SS-YYC banner"/>
 </div>
 
-<div align="center">
+## SS-YYC
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=ffffff&center=true&vCenter=true&width=600&lines=Builder;Thinker;Refiner)](https://git.io/typing-svg)
+**Developer**
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=ffffff&center=true&vCenter=true&width=640&lines=Developer;Thinker;Builder)](https://git.io/typing-svg)
 
 ![Profile Views](https://komarev.com/ghpvc/?username=SS-YYC&color=ffffff&style=flat-square)
 
-![Building something](https://img.shields.io/badge/%F0%9F%94%B5%20Building%20something-3b82f6?style=flat-square) [![Building · Termyx](https://img.shields.io/badge/Building%20%E2%86%92%20Termyx-6366f1?style=flat-square&logo=github&logoColor=white)](https://github.com/SS-YYC/Termyx)
+![Open to work](https://img.shields.io/badge/%F0%9F%9F%A2%20Open%20to%20work-ffffff?style=flat-square)
 
-</div>
+Hey there, it's SS-YYC. I mainly develop in Python but occasionally also program in HTML, CSS and hopefully in the future C#. I'm working on several projects, such as Termyx in Python. I'm also a co-dev for Kodo.
 
-### About
+## Snapshot
 
-Hey there, it's SS-YYC. I mainly develop in Python but occasionally also program in HTML and CSS.
+- ⌗ **Experience** · 5+ years of recreational programming
+- ⟳ **Learning** · C#, JavaScript and a lot more.
+- ✦ **Fun fact** · I love badminton
 
-⌖ **Location** &nbsp; Canada <br/>
-⟳ **Learning** &nbsp; JavaScript, C#
-
-✦ **Fun fact** &nbsp; I like badminton.
-
----
-
-### Stack
+## Tools I Reach For
 
 **Languages**
 
-<img src="https://skillicons.dev/icons?i=python,html,css&theme=dark" alt="Languages"/>
+<img src="https://skillicons.dev/icons?i=html,css,python,js,cs&theme=dark" alt="Languages"/>
 
-**Frontend**
+**Backend & Databases**
 
-<img src="https://skillicons.dev/icons?i=bootstrap&theme=dark" alt="Frontend"/>
+<img src="https://skillicons.dev/icons?i=nodejs&theme=dark" alt="Backend & Databases"/>
 
----
+## Languages
+- 🇬🇧 **English** · ![Native](https://img.shields.io/badge/-Native-00e87a?style=flat-square)
 
-### Languages
+## GitHub Signals
 
-🇬🇧 **English** &nbsp; ![Native](https://img.shields.io/badge/-Native-brightgreen?style=flat-square) <br/>
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=SS-YYC&show_icons=true&theme=gruvbox&include_all_commits=true&count_private=true&hide_border=true" alt="SS-YYC stats"/>
 
----
+<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SS-YYC&layout=compact&langs_count=8&theme=gruvbox&hide_border=true" alt="SS-YYC top languages"/>
 
-### GitHub Stats
+[![GitHub Streak](https://streak-stats.demolab.com?user=SS-YYC&theme=gruvbox&hide_border=true)](https://git.io/streak-stats)
 
-<div align="center">
-
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=SS-YYC&show_icons=true&theme=nord&include_all_commits=true&count_private=true&hide_border=true"/> <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SS-YYC&layout=compact&langs_count=8&theme=nord&hide_border=true"/>
-
-[![GitHub Streak](https://streak-stats.demolab.com?user=SS-YYC&theme=nord&hide_border=true)](https://git.io/streak-stats)
-
-</div>
-
----
+## Extras
 
 ### Activity
 
-[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=SS-YYC&theme=nord-dark&hide_border=true&area=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
-
----
+[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=SS-YYC&theme=github&hide_border=true&area=true)](https://github-readme-activity-graph.vercel.app/graph?username=SS-YYC&theme=github&hide_border=true&area=true)
 
 <div align="center">
 
-> *""I wish there was a way to know you're in the good old days before you've actually left them." - Andy Bernard"*
-
-</div>
-
----
-
-<div align="center">
-
-<a href="https://github.com/SS-YYC">github.com/SS-YYC</a></sub>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=ffffff&height=120&section=footer" width="100%"/>
+<sub>[Open ReadmeForge](https://lebedevnet.github.io/ReadmeForge/)</sub>
 
 </div>
