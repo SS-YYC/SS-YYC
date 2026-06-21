@@ -18,7 +18,7 @@ Hey there, it's SS-YYC. I mainly develop in Python but occasionally also program
 
 - ⌗ **Experience** · 5+ years of recreational programming
 - ⟳ **Learning** · C#, JavaScript and a lot more.
-- ✦ **Fun fact** · I love badminton
+- ✦ **Fun fact** · I love badminton!
 
 ## Tools I Reach For
 
