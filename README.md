@@ -12,7 +12,7 @@
 
 ![Open to work](https://img.shields.io/badge/%F0%9F%9F%A2%20Open%20to%20work-ffffff?style=flat-square)
 
-Hey there, it's SS-YYC. I mainly develop in Python but occasionally also program in HTML, CSS and hopefully in the future C#. I'm working on several projects, such as Termyx in Python. I'm also a co-dev for Kodo.
+Hey there, it's SS-YYC. I mainly develop in Python but occasionally also program in HTML, CSS and hopefully in the future C#. I'm working on several projects, such as Termyx in Python. I'm also a co-dev for Kodo, the lightweight, FOSS IDE.
 
 ## Snapshot
 
