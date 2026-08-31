@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SS-YYC - Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #0a0a0c;
+    --panel: #131316;
+    --panel-2: #17171b;
+    --border: #29271f;
+    --gold: #c9a24b;
+    --gold-bright: #e8c874;
+    --text: #e8e6e1;
+    --text-muted: #8b8880;
+    --text-dim: #55534d;
+    --radius: 3px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body{
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'JetBrains Mono', monospace;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  body::before{
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(201,162,75,0.025) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(201,162,75,0.025) 1px, transparent 1px);
+    background-size: 48px 48px;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  h1, h2, h3 { font-family: 'Fraunces', serif; font-weight: 600; letter-spacing: -0.01em; }
+
+  a { color: inherit; text-decoration: none; }
+
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 32px; position: relative; z-index: 1; }
+
+  /* NAV */
+  nav{
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(10,10,12,0.85);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+  }
+  nav .wrap{ display:flex; align-items:center; justify-content: space-between; height: 64px; }
+  .logo{ font-weight: 600; color: var(--gold); font-size: 15px; letter-spacing: 0.02em; }
+  .logo span{ color: var(--text-dim); }
+  .navlinks{ display:flex; gap: 28px; font-size: 13px; }
+  .navlinks a{ color: var(--text-muted); transition: color .2s; position: relative; }
+  .navlinks a:hover{ color: var(--gold-bright); }
+  .navlinks a::before{ content: attr(data-n); color: var(--gold); margin-right: 6px; font-size: 11px; opacity: .7; }
+
+  /* HERO */
+  .hero{ padding: 100px 0 80px; }
+  .key{ color: #8fa9c9; }
+  .str{ color: var(--gold-bright); }
+
+  .hero-tagline{ margin-top: 34px; max-width: 560px; }
+  .hero-tagline h1{ font-size: 38px; line-height: 1.15; margin-bottom: 14px; }
+  .hero-tagline .accent{ color: var(--gold); font-style: italic; }
+  .hero-tagline p{ color: var(--text-muted); font-size: 14.5px; max-width: 480px; }
+  .hero-tagline .mood{ margin-top: 18px; font-size: 13.5px; }
+
+  .hero-cta{ display:flex; gap: 14px; margin-top: 30px; }
+  .btn{
+    font-size: 13px; padding: 12px 22px; border-radius: 3px; border: 1px solid var(--border);
+    transition: all .2s; display:inline-flex; align-items:center; gap: 8px;
+  }
+  .btn.primary{ background: var(--gold); color: #0a0a0c; font-weight: 600; border-color: var(--gold); }
+  .btn.primary:hover{ background: var(--gold-bright); }
+  .btn.ghost{ color: var(--text-muted); }
+  .btn.ghost:hover{ border-color: var(--gold); color: var(--gold-bright); }
+.icon-btn{
+    padding: 10px 18px;
+    display:inline-flex; align-items:center; gap: 9px;
+    border: 1px solid var(--border); border-radius: 3px;
+    color: var(--text-muted); transition: all .2s;
+    font-size: 13px;
+  }
+  .icon-btn:hover{ border-color: var(--gold); color: var(--gold-bright); transform: translateY(-2px); }
+  .icon-btn svg{ width: 16px; height: 16px; fill: currentColor; flex-shrink: 0; }
+  .icon-btn .handle{ color: var(--text-dim); }
+  .icon-btn:hover .handle{ color: inherit; opacity: .8; }
+  .icon-btn.primary{ background: var(--gold); border-color: var(--gold); color: #0a0a0c; }
+  .icon-btn.primary .handle{ color: #4a3d1f; }
+  .icon-btn.primary:hover{ background: var(--gold-bright); border-color: var(--gold-bright); color: #0a0a0c; transform: translateY(-2px); }
+  .icon-btn.discord-badge{ cursor: default; background: var(--panel-2); }
+  .icon-btn.discord-badge:hover{ border-color: var(--border); color: var(--text-muted); transform: none; }
+
+  /* SECTION SHARED */
+  section{ padding: 90px 0; border-top: 1px solid var(--border); }
+  .eyebrow{ font-size: 12px; color: var(--gold); letter-spacing: 0.08em; margin-bottom: 14px; display:flex; align-items:center; gap: 10px; }
+  .eyebrow::after{ content:''; height:1px; background: var(--border); flex:1; }
+  .section-title{ font-size: 28px; margin-bottom: 40px; max-width: 600px; }
+
+  /* ABOUT */
+  .about-grid{ display: grid; grid-template-columns: 1.2fr 1fr; gap: 60px; align-items: start; }
+  .about-text p{ color: var(--text-muted); font-size: 14.5px; margin-bottom: 16px; }
+  .about-text strong{ color: var(--text); font-weight: 500; }
+  .fact-list{ display:flex; flex-direction: column; gap: 0; border: 1px solid var(--border); border-radius: 4px; overflow:hidden; }
+  .fact{ display:flex; justify-content: space-between; padding: 14px 18px; font-size: 13px; border-bottom: 1px solid var(--border); background: var(--panel); }
+  .fact:last-child{ border-bottom:none; }
+  .fact .k{ color: var(--text-dim); }
+  .fact .v{ color: var(--gold-bright); }
+
+  /* STACK */
+  .stack-groups{ display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .stack-card{ background: var(--panel); border: 1px solid var(--border); border-radius: 4px; padding: 22px; transition: border-color .2s, transform .2s; }
+  .stack-card:hover{ border-color: var(--gold); transform: translateY(-3px); }
+  .stack-card h3{ font-size: 14px; color: var(--gold); font-family: 'JetBrains Mono', monospace; font-weight: 600; margin-bottom: 14px; }
+  .stack-card ul{ list-style:none; display:flex; flex-direction: column; gap: 8px; }
+  .stack-card li{ font-size: 13px; color: var(--text-muted); display:flex; align-items:center; gap: 8px; }
+  .stack-card li::before{ content:'-'; color: var(--text-dim); }
+
+  /* PROJECTS */
+  .projects{ display:flex; flex-direction: column; gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: 4px; overflow:hidden; }
+  .project{
+    background: var(--panel); padding: 30px 32px; display:grid; grid-template-columns: 40px 1fr auto; gap: 24px; align-items:start;
+    transition: background .2s;
+    position: relative;
+  }
+  .project:hover{ background: var(--panel-2); }
+  .project:hover .proj-arrow{ color: var(--gold-bright); transform: translateX(4px); }
+  .proj-num{ color: var(--text-dim); font-size: 13px; padding-top: 3px; }
+  .proj-title{ font-size: 17px; font-family: 'Fraunces', serif; font-weight: 600; margin-bottom: 8px; }
+  .proj-desc{ color: var(--text-muted); font-size: 13.5px; max-width: 520px; margin-bottom: 12px; }
+  .proj-tags{ display:flex; gap: 8px; flex-wrap: wrap; }
+  .tag{ font-size: 11px; color: var(--gold); border: 1px solid var(--border); padding: 3px 9px; border-radius: 20px; }
+  .proj-arrow{ color: var(--text-dim); font-size: 20px; transition: all .2s; padding-top: 4px; }
+
+  /* CONTACT */
+  .contact-panel{
+    background: var(--panel); border: 1px solid var(--border); border-radius: 6px;
+    padding: 50px 48px; text-align:center;
+  }
+  .contact-panel h2{ font-size: 30px; margin-bottom: 12px; }
+  .contact-panel p{ color: var(--text-muted); font-size: 14px; margin-bottom: 30px; }
+  .contact-links{ display:flex; justify-content:center; gap: 16px; flex-wrap: wrap; }
+
+  footer{ padding: 40px 0 60px; text-align:center; color: var(--text-dim); font-size: 12px; }
+  footer .gold{ color: var(--gold); }
+
+  @media (max-width: 760px){
+    .navlinks{ display:none; }
+    .about-grid{ grid-template-columns: 1fr; }
+    .stack-groups{ grid-template-columns: 1fr; }
+    .project{ grid-template-columns: 24px 1fr; }
+    .proj-arrow{ display:none; }
+    .hero-tagline h1{ font-size: 30px; }
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior: auto; }
+  }
+
+  .reveal{ opacity: 0; transform: translateY(16px); transition: opacity .6s ease, transform .6s ease; }
+  .reveal.in{ opacity: 1; transform: translateY(0); }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="logo">&gt;_ <span>ss.yyc</span></div>
+    <div class="navlinks">
+      <a href="#about" data-n="01">about</a>
+      <a href="#stack" data-n="02">stack</a>
+      <a href="#projects" data-n="03">projects</a>
+      <a href="#contact" data-n="04">contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-tagline">
+      <h1>Developer, thinker, <span class="accent">builder.</span></h1>
+      <p>Hey, I'm SS-YYC (he/him/his) - a developer primarily working with Python, with experience in HTML and CSS, and currently learning C#. Outside of code, I'm into travelling, badminton, tennis, and racing.</p>
+    </div>
+
+    <div class="hero-cta">
+      <a href="#projects" class="btn primary">View projects</a>
+      <a href="#contact" class="btn ghost">Get in touch →</a>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap">
+    <div class="eyebrow">01 / about</div>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p><strong>SS-YYC</strong> - a developer primarily working with Python, with experience in HTML and CSS, and currently learning C#. 5+ years of recreational programming, and it's never stopped being fun.</p>
+        <p>Right now that means co-developing <strong>Kodo</strong>, a lightweight, free and open-source code editor built with a focus on simplicity and performance, together with KerbalMissile - plus running <strong>Termyx</strong> on the side. When I'm not coding, I enjoy travelling and exploring places around the world, playing badminton and tennis, following racing, and playing open-world and simulation games - Forza Horizon 5 and Minecraft are among my favourites.</p>
+        <p>I'm based in <strong>Calgary, Canada</strong>, and I'm usually available from 9 AM to 8 PM MDT daily. Feel free to ping me! My contact info's at the bottom of this website.</p>
+      </div>
+      <div class="fact-list reveal">
+        <div class="fact"><span class="k">role</span><span class="v">Developer</span></div>
+        <div class="fact"><span class="k">language</span><span class="v">English (native)</span></div>
+        <div class="fact"><span class="k">experience</span><span class="v">5+ years, recreational</span></div>
+        <div class="fact"><span class="k">learning</span><span class="v">C#, JavaScript</span></div>
+        <div class="fact"><span class="k">off_duty</span><span class="v">Badminton, tennis, racing</span></div>
+        <div class="fact"><span class="k">available</span><span class="v">Open to work</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="stack">
+  <div class="wrap">
+    <div class="eyebrow">02 / stack</div>
+    <h2 class="section-title">Tools I reach for.</h2>
+    <div class="stack-groups">
+      <div class="stack-card reveal">
+        <h3>languages</h3>
+        <ul>
+          <li>Python</li>
+          <li>JavaScript</li>
+          <li>HTML / CSS</li>
+          <li>C# (learning)</li>
+        </ul>
+      </div>
+      <div class="stack-card reveal">
+        <h3>backend</h3>
+        <ul>
+          <li>Node.js (eh, kinda)</li>
+          <li>PyInstaller</li>
+        </ul>
+      </div>
+      <div class="stack-card reveal">
+        <h3>currently learning</h3>
+        <ul>
+          <li>C#</li>
+          <li>JavaScript (deeper)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <div class="eyebrow">03 / projects</div>
+    <h2 class="section-title">My best work.</h2>
+    <div class="projects">
+      <a href="https://github.com/Kodo-IDE" target="_blank" class="project reveal">
+        <span class="proj-num">01</span>
+        <div>
+          <div class="proj-title">Kodo</div>
+          <div class="proj-desc">A fast, lightweight code editor with no accounts, no ads - free forever. Extension marketplace, integrated terminal, and custom themes, built around one idea: your editor should stay out of your way. Co-developed with KerbalMissile.</div>
+          <div class="proj-tags"><span class="tag">Editor</span><span class="tag">Extensions</span><span class="tag">Co-dev</span></div>
+        </div>
+        <span class="proj-arrow">↗</span>
+      </a>
+      <a href="https://github.com/SS-YYC/Termyx" class="project reveal">
+        <span class="proj-num">02</span>
+        <div>
+          <div class="proj-title">Termyx</div>
+          <div class="proj-desc">A lightweight, all-in-one CLI app for quick, practical tasks - stopwatch, timer, calculator, system monitor, password generator, and more, wrapped in a retro-inspired interface. Built in Python, currently on v1.12.2.</div>
+          <div class="proj-tags"><span class="tag">Python</span><span class="tag">CLI</span><span class="tag">Solo project</span></div>
+        </div>
+        <span class="proj-arrow">↗</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="eyebrow">04 / contact</div>
+    <div class="contact-panel reveal">
+      <h2>Let's talk!'</h2>
+      <p>Feel free to get in touch with me if you have any questions!</p>
+      <div class="contact-links">
+        <a href="https://github.com/SS-YYC" target="_blank" class="icon-btn primary" aria-label="GitHub - @SS-YYC">
+          <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          <span>GitHub <span class="handle">@SS-YYC</span></span>
+        </a>
+        <span class="icon-btn discord-badge" aria-label="Discord - @ss.yyc">
+          <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Discord</title><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg>
+          <span>Discord <span class="handle">@ss.yyc</span></span>
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">© 2026 SS-YYC - set in <span class="gold">Fraunces</span> &amp; <span class="gold">JetBrains Mono</span></div>
+</footer>
+
+<script>
+  // Scroll reveal
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('in'); });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+</script>
+
+</body>
+</html>
