@@ -10,7 +10,7 @@
 
 ![Profile Views](https://komarev.com/ghpvc/?username=SS-YYC\&color=ffffff\&style=flat-square)
 
-![Open to Work](https://img.shields.io/badge/%F0%9F%9F%A2%20Open%20to%20Work-ffffff?style=flat-square)
+![Open to Work](https://img.shields.io/badge/%F0%9F%9F%A2%20Open%20to%20Work-C9A24B?style=flat-square)
 
 Hey there! I'm SS-YYC (he/him/his), a developer primarily working with **Python**, with experience in **HTML** and **CSS**, and currently learning **C#**.
 
