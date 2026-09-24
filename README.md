@@ -8,7 +8,7 @@
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code\&size=20\&pause=1000\&color=ffffff\&center=true\&vCenter=true\&width=640\&lines=Developer;Thinker;Builder)](https://git.io/typing-svg)
 
-![Profile Views](https://komarev.com/ghpvc/?username=SS-YYC\&color=ffffff\&style=flat-square)
+![Profile Views](https://komarev.com/ghpvc/?username=SS-YYC\&color=C9A24B\&style=flat-square)
 
 ![Open to Work](https://img.shields.io/badge/%F0%9F%9F%A2%20Open%20to%20Work-C9A24B?style=flat-square)
 
