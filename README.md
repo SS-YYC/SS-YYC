@@ -22,7 +22,7 @@ If you'd like to get in touch, you can find me on Discord at **@ss.yyc**. Feel f
 
 For Kodo-related help, check out the **Kodo communications server**. The link can be found in the [Kodo-IDE](https://github.com/Kodo-IDE) repositories.
 
-Check out **[Kodo](https://github.com/Kodo-IDE)**, my primary project, which I co-developed with **[KerbalMissile](https://github.com/KerbalMissile)**.
+Check out **[Kodo](https://github.com/Kodo-IDE)**, my primary project, which I co-develop with **[KerbalMissile](https://github.com/KerbalMissile)**.
 
 ## Snapshot
 
