@@ -1,7 +1,7 @@
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0d1117&height=220&section=header&text=SS-YYC&fontSize=72&fontColor=ffffff&fontAlignY=38&fontStyle=bold&desc=Building%20software%20that%20stays%20light.&descSize=17&descAlignY=58&descColor=C9A24B&animation=fadeIn" width="100%" alt="SS-YYC - Building software that stays light." />
 
-  <h3>Developer · Open Source · Performance</h3>
+  <h3>Developer · Thinker · Builder</h3>
 
   <p>
     <img src="https://komarev.com/ghpvc/?username=SS-YYC&color=8C00FF&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile views"/>
@@ -21,15 +21,15 @@
 
 ## About
 
-I'm **SS-YYC**, a developer interested in software engineering, performance optimization, and open-source development.
+Hey!
 
-I enjoy taking ideas from concept to implementation, figuring out how things work under the hood, and making software faster, lighter, and more maintainable.
+I'm SS-YYC, a developer interested in understanding how things work under the hood. I enjoy exploring open-source software and building projects of my own.
 
-My primary project is **[Kodo](https://github.com/Kodo-IDE/Kodo)**, a lightweight, modular, open-source IDE built around a simple principle:
+My primary focus is UI design. I believe a good interface makes a real difference in how people experience a product, so I put a lot of thought into making the things I build both functional and visually appealing.
 
-> Great software doesn't need unnecessary complexity.
+I'm a co-developer of [@Kodo-IDE](https://github.com/Kodo-IDE), a lightweight, modular, open-source IDE built around simplicity and keeping the base app free from junk.
 
-When I'm not coding, you'll probably find me playing badminton, following motorsports (F1!), exploring new places, or playing simulation and open-world games.
+I'm based in Calgary, Canada. When I'm not coding, you'll probably find me playing badminton, following motorsports (especially F1!), or playing simulation and open-world games.
 
 ---
 
@@ -43,19 +43,11 @@ When I'm not coding, you'll probably find me playing badminton, following motors
 
 ### Kodo - Code fast. Stay light.
 
-A lightweight, cross-platform IDE designed to provide a focused development experience without unnecessary overhead.
-
-**What I work on:**
-
-* ⚡ **Performance engineering** - profiling, reducing allocations, and optimizing execution paths.
-* 🧩 **Modular architecture** - a clean core with extensible functionality.
-* 🛠️ **Developer tooling** - improving the editing experience and integrating development tools.
-* 🐧 **Cross-platform development** - building for Windows and Linux.
-* 🌐 **Open source** - collaborating with contributors and growing a developer community.
+A lightweight, cross-platform code editor built to help you get straight to work. No unnecessary bloat, no accounts, no ads. Just a focused coding experience.
 
 **Technology:** C# · .NET · Avalonia UI
 
-I develop Kodo alongside [KerbalMissile](https://github.com/KerbalMissile).
+I develop Kodo alongside my friend [KerbalMissile](https://github.com/KerbalMissile).
 
 **Explore the project:** [Repository](https://github.com/Kodo-IDE/Kodo) · [Organization](https://github.com/Kodo-IDE)
 
@@ -99,15 +91,6 @@ I develop Kodo alongside [KerbalMissile](https://github.com/KerbalMissile).
 
 ---
 
-## Beyond the Code
-
-* 🏸 Badminton and tennis
-* 🏎️ Motorsports and racing simulations
-* 🌍 Travelling and exploring new places
-* 🎮 Open-world and simulation games
-
----
-
 ## Connect
 
 <div align="center">
@@ -119,6 +102,4 @@ I develop Kodo alongside [KerbalMissile](https://github.com/KerbalMissile).
   <a href="https://github.com/Kodo-IDE">
     <img src="https://img.shields.io/badge/Kodo-IDE-8C00FF?style=for-the-badge&logo=github" alt="Kodo IDE organization"/>
   </a>
-
-  <p><sub>Open source. Thoughtful engineering. Less unnecessary overhead.</sub></p>
 </div>
