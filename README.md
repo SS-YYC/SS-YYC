@@ -4,9 +4,7 @@
   <h3>Developer · Open Source · Performance</h3>
 
   <p>
-    <a href="https://github.com/Kodo-IDE/Kodo">
-      <img src="https://img.shields.io/badge/Current%20Focus-Kodo-8C00FF?style=for-the-badge" alt="Current focus: Kodo"/>
-    </a>
+    <img src="https://komarev.com/ghpvc/?username=SS-YYC&color=8C00FF&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile views"/>
     <img src="https://img.shields.io/badge/Philosophy-Lightweight%20%26%20Modular-C9A24B?style=for-the-badge" alt="Lightweight and modular"/>
   </p>
 
