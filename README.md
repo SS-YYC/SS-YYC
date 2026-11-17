@@ -37,7 +37,7 @@ I'm based in Calgary, Canada. When I'm not coding, you'll probably find me playi
 
 <div align="center">
   <a href="https://github.com/Kodo-IDE/Kodo">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Kodo-IDE&repo=Kodo&theme=github_dark&hide_border=true" alt="Kodo repository card" />
+    <img src="https://github-stats-extended.vercel.app/api/pin/?username=Kodo-IDE&amp;repo=Kodo&amp;theme=github_dark&amp;hide_border=true" alt="Kodo repository card" />
   </a>
 </div>
 
